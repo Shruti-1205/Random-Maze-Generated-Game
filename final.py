@@ -11,7 +11,7 @@ hehe = hehe.flatten()
 # print(maze)
 
 
-print(hehe)
+#print(hehe)
 state = {'score': 0}
 
 path = Turtle(visible=False)
@@ -19,13 +19,13 @@ writer = Turtle(visible=False)
 
 aim = vector(5, 0)
 pacman = vector(-180, 180)
-ghosts = [
-    [vector(-180, 160), vector(5, 0)],
-    [vector(-180, -160), vector(0, 5)],
-    [vector(100, 160), vector(0, -5)],
-    [vector(100, -160), vector(-5, 0)],
-]
-
+ghosts = []
+#     [vector(-180, 160), vector(5, 0)],
+#     [vector(-180, -160), vector(0, 5)],
+#     [vector(100, 160), vector(0, -5)],
+#     [vector(100, -160), vector(-5, 0)],
+# ]
+hehe[0]=hehe[1]=1
 tiles = hehe
 
 # tiles = [
@@ -53,7 +53,7 @@ tiles = hehe
 
 
 def world():
-    bgcolor('cyan')
+    bgcolor('pink')
     path.color('blue')
 
     for index in range(len(tiles)):
@@ -160,9 +160,9 @@ def change(x, y):
 
 
 setup(600, 600, 500, 120)
-# hideturtle()
+hideturtle()
 tracer(False)
-writer.goto(160, 160)
+writer.goto(250, 160)
 writer.color('black')
 writer.write(state['score'])
 listen()

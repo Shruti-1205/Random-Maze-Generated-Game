@@ -251,4 +251,4 @@ for i in range(width - 1, 0, -1):
 
 # Print final maze
 printMaze(maze)
-print(maze)
+#print(maze)
